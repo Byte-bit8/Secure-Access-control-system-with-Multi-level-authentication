@@ -1,4 +1,4 @@
-# Secure-Access-control-system-with-Multi-level-authentication
+# 🔐Secure-Access-control-system-with-Multi-level-authentication
 ## ✒️Project Overview
 The secure access control system uses a LPC2148 ARM7 Microcontroller with password and Fingerprint supported authentication.
 
@@ -45,7 +45,25 @@ verified.
 - Flash Magic
 
 ## Workflow
-<img width="1472" height="1800" alt="image" src="https://github.com/user-attachments/assets/b62a3d84-a8ee-4131-b25b-f77a3cb3c66a" />
+<img width="1472" height="1800" alt="image" src="https://github.com/user-attachments/assets/bb802009-857d-4f9c-8366-49d187f811ce" />
+
+## Authentication Levels
+### 1️⃣User ID verification
+- Enter a 4 digit number as ID
+- ID is crossed checked with the ID in EEPROM
+- If the ID is valid -> Enter the password
+- If the ID is invalid -> Access is denied
+### 2️⃣Password Verification
+- Enter the Correct password.
+- Password is cross checked with EEPROM.
+- if Password is correct -> proceed to fingerprint.
+- if Password is incorrect -> Access denied.
+### 3️⃣Fingerprint verification
+- The finger is placed on the fingerprint sensor(R305).
+- Fingerprint is matched with the template.
+- if matches -> Doors open.
+- if dosen't match -> Access denied.
+
 
 
 ## ☑️Advantages 
@@ -55,7 +73,7 @@ verified.
 - Efficient EEPROM memory management
 - Real-time LCD status indication
 
-## Hardware Setup
+
 
 ## Developed by
 Md. Hassaan Ali Areeb | ECE | Embedded Systems Enginner
